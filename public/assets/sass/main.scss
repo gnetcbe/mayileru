@@ -1,0 +1,16 @@
+// abstract
+@import "abstracts/index";
+// Component
+@import "components/index";
+// utilities
+@import "utilities/index";
+// Module
+@import "layout/index";
+// Pages
+@import "pages/index";
+// Extra
+@import "extra";
+
+body {
+  background-color: 10px solid red !important;
+}

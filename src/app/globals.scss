@@ -1,0 +1,78 @@
+// Plugin CSS
+@import "animate.css";
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+@import "select2/dist/css/select2.css";
+@import "react-modal-video/css/modal-video.css";
+@import "lightgallery/css/lightgallery.css";
+@import "lightgallery/css/lg-zoom.css";
+@import "lightgallery/css/lg-thumbnail.css";
+
+// Init main SCSS File
+@import "~/public/assets/css/bootstrap.min.css";
+@import "~/public/assets/css/select2.min.css";
+@import "~/public/assets/css/jquery-ui.css";
+@import "~/public/assets/css/plyr.css";
+@import "~/public/assets/css/animate.css";
+@import "~/public/assets/css/slick.css";
+
+@import "/public/assets/sass/main.scss";
+
+:root {
+  --primary-color: #2e3192;
+  --text-color: #333;
+}
+.primary-color{  background-color: var(--primary-color) !important;}
+.primary-font-color{  color: var(--primary-color) !important;}
+.fnred{  color:  hsl(0, 83%, 50%)  !important;}
+.tifont{ font-family: "Titillium Web", sans-serif !important; }
+.fsize18{ font-size:18px !important; }
+.fsize17{ font-size:17px !important; }
+.fsize16{ font-size:16px !important; }
+.fw400{font-weight:400 !important; }
+.fw500{font-weight:500 !important; }
+.fw600{font-weight:600 !important; }
+.text-white{ color:#fff !important; }
+.course-item__content { padding: 12px 10px !important;}
+@media (min-width: 1199px) {
+    .certificate {
+        padding-top: 10px !important;
+    }
+}
+@media (max-width: 767px) {
+  .logo img {
+    max-width: 200px !important; /* or any size suitable for mobile */
+  }
+}
+
+@media (max-width: 767px) { 
+.blog-page-section .flex-between  button{
+    
+    display: none;
+} }
+
+.text-neutral-500 {
+
+font-weight:700 !important;
+} 
+.text-lg {
+
+   font-size: 28px !important;
+}
+.display2 {
+    font-size: 32px !important;
+}
+ .text-main-two-600 {
+   
+    margin-top: 7px;
+}
+
+#commentForm .text-lg {
+
+   font-size: 20px !important;
+}
+
+.header-right .btn { 
+    padding: 10px 22px !important;
+}
+ss {  color:  hsl(0, 83%, 50%)  !important;}

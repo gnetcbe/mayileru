@@ -1,0 +1,36 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+  // Sanitize inputs
+  $name = htmlspecialchars($_POST["name"] ?? '');
+  $email = htmlspecialchars($_POST["email"] ?? '');
+  $phone = htmlspecialchars($_POST["phone"] ?? '');
+  $message = htmlspecialchars($_POST["message"] ?? '');
+
+  // Recipient email
+  $to = "mayileruandco@gmail.com"; // your email here
+  $subject = "New Enquiry from $name";
+
+  // Email body
+  $body = "You have received a new enquiry:\n\n";
+  $body .= "Name: $name\n";
+  $body .= "Email: $email\n";
+  $body .= "Phone: $phone\n\n";
+  $body .= "Message:\n$message\n";
+
+  // Headers
+  $headers = "From: noreply@".$_SERVER['SERVER_NAME']."\r\n";
+  $headers .= "Reply-To: $email\r\n";
+  $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+
+  // Send mail
+  if (mail($to, $subject, $body, $headers)) {
+    echo "success";
+  } else {
+    http_response_code(500);
+    echo "Mail sending failed!";
+  }
+} else {
+  http_response_code(405);
+  echo "Method not allowed";
+}
+?>
