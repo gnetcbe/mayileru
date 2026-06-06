@@ -2,12 +2,12 @@
   "name": "RM_Mayileru",
   "version": "0.1.0",
   "private": true,
-"scripts": {
-  "dev": "next dev",
-  "build": "next build",
-  "start": "next start",
-  "export": "next export"
-},
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export"
+  },
   "dependencies": {
     "animate.css": "^4.1.1",
     "aos": "^2.3.4",
@@ -15,6 +15,7 @@
     "jquery": "^3.7.1",
     "lightgallery": "^2.8.2",
     "next": "14.1.4",
+    "nodemailer": "^8.0.10",
     "rc-slider": "^10.6.2",
     "react": "^18",
     "react-countup": "^6.5.3",

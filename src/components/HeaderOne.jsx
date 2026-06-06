@@ -141,7 +141,7 @@ const toggleMenu = () => {
             </div>
             {/* Header Right start */}
             <div className='header-right flex-align'>
-             <a class="btn btn-main hide-on-mobile   primary-color flex-align gap-1" href="/contact">Enquire Now<i class="ph-bold ph-arrow-up-right d-flex text-lg"></i></a>
+             <a className="btn btn-main hide-on-mobile   primary-color flex-align gap-1" href="/contact">Enquire Now<i className="ph-bold ph-arrow-up-right d-flex text-lg"></i></a>
               <button
                 type='button'
                 className='toggle-mobileMenu d-lg-none text-neutral-200 flex-center'

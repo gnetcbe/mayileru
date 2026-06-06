@@ -1,7 +1,10 @@
+"use client";
 import Link from "next/link";
+import MayileruChatBot from "@/components/MayileruChatBot";
 
 const FooterThree = () => {
   return (
+    <>
     <footer className='footer bg-neutral-900 position-relative z-1'>
       <img
         src='assets/images/shapes/shape2.png'
@@ -279,7 +282,11 @@ const FooterThree = () => {
         </div>
       </div>
     </footer>
+    <MayileruChatBot />
+    </>
   );
 };
+
+
 
 export default FooterThree;
